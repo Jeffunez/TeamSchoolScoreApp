@@ -257,6 +257,11 @@
     <Compile Include="Models\TeamGuestSetting.cs" />
     <Compile Include="Models\TeamMemberSettings.cs" />
     <Compile Include="Models\TeamMessagingSettings.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\ClaimPrincipalExtension.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\Globals.cs" />
@@ -298,6 +303,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\MicrosoftTeamsSamplesHelloWorldWeb20200617182011 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -340,7 +346,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\_ResultsPartial.cshtml" />
     <Content Include="Views\Shared\_ResultsTable.cshtml" />
-    <None Include="Web.config.secrets" />
+    <Content Include="Web.config.secrets" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\Resource.resx">
@@ -359,6 +365,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebActivatorEx\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
